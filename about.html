@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+/* navbar */
+
+nav{
+  background: #1F2833;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a:hover{
+    background: red;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: rgba(255, 0, 0, 0.768) ;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  /* navbar */
+.about-section{
+    background: url("my\ image/background2.jpg") no-repeat left;
+    background-size: 55%;
+    /* background-color: #fdfdfd; */
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: black;
+    padding: 150px;
+    color: white;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.text{
+    font-size: 13px;
+    color:white;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:915px)
+{
+ h1{
+    padding: 70px 0px 0px 0px;
+ }   
+}
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+
+h1:hover{
+
+color: azure;
+
+}
+</style>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Portfolio</label>
+        <ul>
+            <li><a href="try.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="about-section">
+        <div class="inner-container">
+            
+            <h1>About Me</h1>
+            <img src="my image/logo.jpg" height="200px" alt="">
+            <p class="text">
+             Name: Himanshu Thakur<br>
+             College: ShriRam Institute Of Technology<br>
+             Enrollment No: 0205CS201050<br>
+             Course:Bachelor Of Technology<br>
+             Branch:Computer Science Engineering
+                 </p>    
+          
+        </div>
+    </div>
+</body>
+</html>
